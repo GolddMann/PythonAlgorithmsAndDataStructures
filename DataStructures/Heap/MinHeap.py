@@ -56,6 +56,6 @@ class MinHeap:
             return val
 
 
-minheap = MinHeap([5, 4, 3, 2, 1])
+minheap = MinHeap([5, 4, 3, 2, 1, 0])
 while not minheap.isEmpty():
     print(minheap.pop_top())
