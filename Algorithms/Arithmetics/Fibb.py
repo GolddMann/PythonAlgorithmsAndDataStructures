@@ -1,3 +1,7 @@
+from functools import lru_cache
+
+
+@lru_cache(maxsize=None)
 def FibbRecusion(num):
     if num <= 0:
         return 0
@@ -25,7 +29,7 @@ def Fibb(num):
     return fibbs[0]
 
 
-print(Fibb(6))
+print(FibbRecusion(200))
 
-# Input:  6
-# Output: 8
+# Input:  200
+# Output: 280571172992510140037611932413038677189525
